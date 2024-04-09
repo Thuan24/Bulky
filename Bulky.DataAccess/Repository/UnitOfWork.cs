@@ -24,12 +24,10 @@ namespace BulkyShop.DataAccess.Repository
             _db = db;
             ProductImage = new ProductImageRepository(_db);
             ApplicationUser = new ApplicationUserRepository(_db);
-            ShoppingCart = new ShoppingCartRepository(_db);
             Category = new CategoryRepository(_db);
             Product = new ProductRepository(_db);
             Company = new CompanyRepository(_db);   
-            OrderHeader = new OrderHeaderRepository(_db);
-            OrderDetail = new OrderDetailRepository(_db);   
+
         }
 
         public void Save()
